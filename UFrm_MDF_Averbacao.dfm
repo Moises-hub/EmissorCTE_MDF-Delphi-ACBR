@@ -1,0 +1,85 @@
+object Frm_MDF_Averbacao: TFrm_MDF_Averbacao
+  Left = 0
+  Top = 0
+  BorderIcons = [biMinimize, biMaximize]
+  BorderStyle = bsToolWindow
+  Caption = 'MDFe-Averba'#231#227'o'
+  ClientHeight = 126
+  ClientWidth = 305
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label4: TLabel
+    Left = 8
+    Top = 24
+    Width = 197
+    Height = 16
+    Caption = 'Digite o n'#250'mero da Averba'#231#227'o'
+    FocusControl = DBEdit5
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DBEdit5: TDBEdit
+    Left = 8
+    Top = 47
+    Width = 289
+    Height = 24
+    CharCase = ecUpperCase
+    DataField = 'AVERBA'
+    DataSource = DM.DS_Seguro_Averbacao
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 137
+    Top = 82
+    Width = 80
+    Height = 28
+    Caption = 'Ok'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    HotImageIndex = 6
+    ImageIndex = 13
+    Images = Frm_Seguro.ImageList1
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button1: TButton
+    Left = 218
+    Top = 82
+    Width = 80
+    Height = 28
+    Caption = 'Cancelar'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    HotImageIndex = 27
+    ImageIndex = 9
+    Images = Frm_Seguro.ImageList1
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+end
